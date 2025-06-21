@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Aceita?</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="personagem"><img src="/imagens/feliz.png"></div>
+        <div id="p1" style="display: flex;">
+            <h1 id="bem_vindo">BEM-VINDO!</h1>
+            <button id="comecar" onclick="ocultarDiv('p1'); mostrarDiv('p2'); moverPersonagem()"> Começar</button>
+
+        </div>
+
+        <div id="p2" style="display: none;">
+            <h2 style=>QUER SAIR COMIGO?</h2>
+            <div id="botoes_menores_container" style="display: none;">
+                <button id="sim" class="botoes_menores" onclick="respostaSim()">Sim</button>
+                <button id="nao" class="botoes_menores" onclick="respostaNao()">Não</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
